@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Employee Details Form</title>
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+	<!-- Custom CSS -->
+	<style>
+		body {
+			background: #eb34e1;
+			
+			font-family: Arial, sans-serif;
+		}
+		
+		form {
+			margin: 50px auto;
+			max-width: 500px;
+			padding: 30px;
+			background-color: #34ebd5;
+			border-radius: 5px;
+			box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+		}
+		
+		h1 {
+			margin-bottom: 30px;
+			text-align: center;
+			color: #55eb34;
+		}
+		
+		input[type="text"], input[type="password"],input[type="email"], select, textarea {
+			border-radius: 4px;
+			border: none;
+			background-color: #f7f7f7;
+			padding: 10px;
+			margin-bottom: 20px;
+			width: 100%;
+			font-size: 16px;
+			color: #333;
+			box-sizing: border-box;
+		}
+		
+		input[type="submit"] {
+			background-color: #28a745;
+			border: none;
+			border-radius: 4px;
+			color: #fff;
+			padding: 10px 20px;
+			font-size: 16px;
+			cursor: pointer;
+			transition: all 0.3s;
+		}
+		
+		input[type="submit"]:hover {
+			background-color: #218838;
+		}
+		
+		label {
+			font-size: 16px;
+			font-weight: bold;
+			color: #333;
+			margin-bottom: 5px;
+			display: block;
+		}
+		
+		.form-group {
+			margin-bottom: 30px;
+		}
+		label[for="email"] {
+ 		 font-size: 18px;
+		}
+		
+		.card {
+			border: none;
+			box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+		}
+
+		.card-title {
+			color: #fff;
+			font-size: 30px;
+			margin-bottom: 30px;
+			text-align: center;
+			text-shadow: 1px 1px #333;
+		}
+
+		.card-body {
+			padding: 30px;
+		}
+
+		.btn-primary {
+			background-color: #dc3545;
+			border: none;
+			border-radius: 4px;
+			color: #fff;
+			padding: 10px 20px;
+			font-size: 16px;
+			cursor: pointer;
+			transition: all 0.3s;
+		}
+
+		.btn-primary:hover {
+			background-color: #c82333;
+		}
+		
+	</style>
+	
+</head>
+<body>
+
+	<div class="container">
+		<div class="row justify-content-center">
+			<div class="col-md-6">
+				<div class="card shadow-lg p-3 mb-5 bg-danger rounded">
+					<div class="card-body">
+						<h1 class="card-title text-center">Employee Details Form</h1>
+						<form action="save">
+							<div class="form-group">
+								<label for="name">Name</label>
+								<input type="text" name="name" placeholder="Enter Name" class="form-control" required>
+							</div>
+							<div class="form-group">
+								<label for="salary">Salary</label>
+								<input type="text" name="name1" placeholder="Enter Salary" class="form-control" required>
+							</div>
+							<div class="form-group">
+								<label for="email">Email</label>
+								<input type="email" name="name2" placeholder="Enter Email Id" class="form-control" required>
+							</div>
+							<div class="form-group text-center">
+								<input type="submit" value="Submit" class="btn btn-primary mx-auto">
+							</div>
+						</form>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!-- Bootstrap JS -->
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js"></script>
+
+</body>
+</html>
